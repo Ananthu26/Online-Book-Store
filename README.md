@@ -15,20 +15,28 @@
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ## :checkered_flag: Welcome Page ##
--consists of Slideshow Menu-Card and Grid-Menu 
-![Screenshot](./image/nav.png)
-![Screenshot](./image/Card.png)
-![Screenshot](./image/carousel.png)
-![Screenshot](./image/footer.png)
+-Card pages have different categories of Books and carousel Slideshow is used to display Discounts ,offers or Highlights
+![Screenshot](./Image/Nav.png)
+![Screenshot](./Image/Card.png)
+![Screenshot](./Image/carousel.png)
+![Screenshot](./Image/Footer.png)
 ## Login Page
--Top Foods . Everything Special!!
-![Screenshot](./image/login.png)
+![Screenshot](./Image/login.png)
 ## Wishlist
-![Screenshot](./image/wishlist.png)
-## CartPage
-![Screenshot](./image/cart.png)
-## 
-![Screenshot](./image/cart.png)
+![Screenshot](./Image/Nav.png)
+![Screenshot](./Image/wishlist.png)
+![Screenshot](./Image/Footer.png)
+## Cart Page
+![Screenshot](./Image/Nav.png)
+![Screenshot](./Image/cart.png)
+![Screenshot](./Image/Footer.png)
+## Checkout Page
+![Screenshot](./Image/Nav.png)
+![Screenshot](./Image/checkout-title.png)
+![Screenshot](./Image/checkoutaddress.png)
+![Screenshot](./Image/checkoutaddress2.png)
+![Screenshot](./Image/Footer.png)
+
 
 
 

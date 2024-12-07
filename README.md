@@ -21,49 +21,47 @@
   🟢 Categorized book collections
   🟢 Dynamic carousel showcase
   🟢 Special offers and highlights
+<br>
 
-  ### 📸 Homepage Screenshots
-  <img src="./Image/Nav.png" alt="Navigation" width="500"><br>
-  <img src="./Image/Card.png" alt="Book Categories" width="500"><br>
-  <img src="./Image/carousel.png" alt="Carousel" width="500"><br>
-  <img src="./Image/Footer.png" alt="Footer" width="500"><br>
+  <img src="./Image/Nav.png" alt="Navigation" width="600"><br>
+  <img src="./Image/Card.png" alt="Book Categories" width="600"><br>
+  <img src="./Image/carousel.png" alt="Carousel" width="600"><br>
+  <img src="./Image/Footer.png" alt="Footer" width="600"><br>
+  ### 📸 Authentication
+  -Secure and user-friendly login system
+<br>
 
-  ### � Authentication
-  Secure and user-friendly login system
-
-  ### 📸 Authentication Screenshots
-  <img src="./Image/login.png" alt="Login Page" width="500"><br>
-
+  <img src="./Image/login.png" alt="Login Page" width="600"><br>
   ### ❤️ Wishlist
   Keep track of your favorite books
+  <br>
 
-  ### 📸 Wishlist Screenshots
-  <img src="./Image/Nav.png" alt="Navigation" width="500"><br>
-  <img src="./Image/wishlist.png" alt="Wishlist" width="500"><br>
-  <img src="./Image/Footer.png" alt="Footer" width="500"><br>
+  <img src="./Image/Nav.png" alt="Navigation" width="600"><br>
+  <img src="./Image/wishlist.png" alt="Wishlist" width="600"><br>
+  <img src="./Image/Footer.png" alt="Footer" width="600"><br>
+<br>
 
-  ### � Shopping Cart
-  Seamless shopping experience
+  ### 📸 Shopping Cart 
+  -Seamless shopping experience
+  <br>
 
-  ### 📸 Shopping Cart Screenshots
-  <img src="./Image/Nav.png" alt="Navigation" width="500"><br>
-  <img src="./Image/cart.png" alt="Shopping Cart" width="500"><br>
-  <img src="./Image/Footer.png" alt="Footer" width="500"><br>
+  <img src="./Image/Nav.png" alt="Navigation" width="600"><br>
+  <img src="./Image/cart.png" alt="Shopping Cart" width="600"><br>
+  <img src="./Image/Footer.png" alt="Footer" width="600"><br>
 
-  ### � Checkout
-  Streamlined checkout process with:
+   ### 📸 Checkout 
   🟢 Multiple payment options
   🟢 Address management
   🟢 Order summary
+  <br>
 
-  ### 📸 Checkout Screenshots
-  <img src="./Image/Nav.png" alt="Navigation" width="500"><br>
-  <img src="./Image/checkout-title.png" alt="Checkout Title" width="500"><br>
-  <img src="./Image/checkoutaddress.png" alt="Checkout Address" width="500"><br>
-  <img src="./Image/checkoutaddress2.png" alt="Checkout Address Continued" width="500"><br>
-  <img src="./Image/Footer.png" alt="Footer" width="500"><br>
+  <img src="./Image/Nav.png" alt="Navigation" width="600"><br>
+  <img src="./Image/checkout-title.png" alt="Checkout Title" width="600"><br>
+  <img src="./Image/checkoutaddress.png" alt="Checkout Address" width="600"><br>
+  <img src="./Image/checkoutaddress2.png" alt="Checkout Address Continued" width="600"><br>
+  <img src="./Image/Footer.png" alt="Footer" width="600"><br>
 
-  ---
+<br>
 
   <p>Made with ❤️ for book lovers</p>
   <a href="#top">⬆️ Back to top</a>

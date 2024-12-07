@@ -24,7 +24,7 @@ Beautiful landing page featuring:
 - Special offers and highlights
 
 <details>
-<summary>📸 Screenshots</summary>
+🟢<summary>📸 Screenshots</summary>
 <br>
 <img src="./Image/Nav.png" alt="Navigation">
 <img src="./Image/Card.png" alt="Book Categories">
@@ -36,7 +36,7 @@ Beautiful landing page featuring:
 Secure and user-friendly login system
 
 <details>
-<summary>📸 Screenshots</summary>
+🟢<summary>📸 Screenshots</summary>
 <br>
 <img src="./Image/login.png" alt="Login Page">
 </details>
@@ -45,7 +45,7 @@ Secure and user-friendly login system
 Keep track of your favorite books
 
 <details>
-<summary>📸 Screenshots</summary>
+🟢<summary>📸 Screenshots</summary>
 <br>
 <img src="./Image/wishlist.png" alt="Wishlist">
 </details>
@@ -54,7 +54,7 @@ Keep track of your favorite books
 Seamless shopping experience
 
 <details>
-<summary>📸 Screenshots</summary>
+🟢<summary>📸 Screenshots</summary>
 <br>
 <img src="./Image/cart.png" alt="Shopping Cart">
 </details>
@@ -66,7 +66,7 @@ Streamlined checkout process with:
 - Order summary
 
 <details>
-<summary>📸 Screenshots</summary>
+🟢<summary>📸 Screenshots</summary>
 <br>
 <img src="./Image/checkout-title.png" alt="Checkout Title">
 <img src="./Image/checkoutaddress.png" alt="Checkout Address">

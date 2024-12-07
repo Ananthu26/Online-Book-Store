@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Bookstore Cart</title>
+  <!-- Bootstrap CSS -->
+  <!--bootstrap cdn-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      /* background-color: #f8f9fa; */
+      font-family: "Playfair", serif;
+    }
+    .cart-container {
+  margin: 20px auto;
+  max-width: 1100px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.table thead th {
+  background: #007bff;
+  color: #fff;
+  text-align: center;
+}
+
+.table tbody td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.book-cover {
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.quantity-input {
+  width: 70px;
+  text-align: center;
+}
+
+.promo-section {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Ensures items stack on smaller screens */
+  gap: 10px;
+  align-items: center;
+}
+
+.promo-section input {
+  max-width: 300px;
+  flex-grow: 1;
+}
+
+.total-section {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.btn-remove {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-remove:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+  .cart-container {
+    padding: 15px;
+  }
+
+  .table thead {
+    display: none; /* Hide table headers on small screens */
+  }
+
+  .table tbody td {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: none;
+  }
+
+  .table tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .promo-section {
+    flex-direction: column; /* Stack promo section items */
+    align-items: flex-start;
+  }
+
+  .total-section {
+    text-align: left; /* Align total section to the left */
+  }
+  .table tbody tr {
+  border: 1px solid #000; /* Add a border around each product row */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  margin-bottom: 10px; /* Optional: Add spacing between rows */
+  overflow: hidden; /* Ensure border radius is applied properly */
+}
+}
+
+/* @media (max-width: 576px) {
+  .book-cover {
+    width: 50px;
+    height: 75px;
+  } */
+
+
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar mb-0">
+        <div class="container-fluid">
+          <a href="./index.html">
+          <img id="logo" src="https://img.freepik.com/free-vector/hand-drawn-flat-design-bookstore-logo_23-2149350212.jpg" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="close-icon"><i class="fas fa-times"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- search bar -->
+             <div class="search-bar">
+            <form class="d-flex" role="search" >
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-search" type="submit">Search</button>
+              </form>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center justify-content-center  text-center">
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link me-5" href="./cart.html" aria-disabled="true"><i class="fa-brands fa-bitbucket me-1"></i> Cart</a>
+              
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link me-5" aria-disabled="true"><i class="fa-regular fa-user me-1"></i>Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5" href="./wishlist.html" aria-disabled="true"><i class="fa-regular fa-heart me-1"></i></i>Wishlist</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--cart html starts here-->
+    <div class="container cart-container">
+        <h2 class="cart-header">Your Shopping Cart</h2>
+      
+        <!-- Cart Table -->
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Book</th>
+              <th>Cover</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Book">Aghori 1: The Untold Story</td>
+              <td data-label="Cover">
+                <img src="https://m.media-amazon.com/images/I/81Zbt0FddvL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover" class="book-cover">
+              </td>
+              <td data-label="Price">₹213</td>
+              <td data-label="Quantity">
+                <input type="number" value="1" class="form-control quantity-input" readonly>
+              </td>
+              <td data-label="Subtotal">₹213</td>
+              <td data-label="Actions"><a href="#" class="btn-remove">Remove</a></td>
+            </tr>
+            <tr>
+              <td data-label="Book">The Curse of Muziris</td>
+              <td data-label="Cover">
+                <img src="https://m.media-amazon.com/images/I/816Jk3XwEbL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover" class="book-cover">
+              </td>
+              <td data-label="Price">₹339</td>
+              <td data-label="Quantity">
+                <input type="number" value="1" class="form-control quantity-input" readonly>
+              </td>
+              <td data-label="Subtotal">₹339</td>
+              <td data-label="Actions"><a href="#" class="btn-remove">Remove</a></td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <!-- Promo Code Section -->
+        <div class="promo-section">
+          <div>
+            <input type="text" class="form-control" placeholder="Promo Code">
+            <small class="text-muted">Enter a promo code if you have one.</small>
+          </div>
+          <button class="btn btn-outline-success">Apply</button>
+        </div>
+      
+        <!-- Total and Checkout -->
+        <div class="total-section">
+          <p><strong>Subtotal:</strong> $552.00</p>
+          <p><strong>Shipping:</strong> $50.00</p>
+          <p><strong>Total:</strong> $602.00</p>
+          <div>
+            <a href="#" class="btn btn-secondary mt-2">Continue Shopping</a>
+            <a href="./checkout.html" class="btn btn-primary mt-2">Proceed to Checkout</a>
+          </div>
+        </div>
+      </div>
+      
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--footer starts here-->
+  <div class="container-fluid" id="main-foot" style="background-color:#054D44; margin-top:75px;">
+    <div class="footer">
+      <div class="row">
+        <div class="col-md-3" id="pad">
+          <h2 class="site-name">THE BOOKSTORE</h2>
+          <p class="para"> The Bookstore draws book lovers of all ages into a community where they can discover great books, engage with booklovers and meet their favourite literary personalities.
+          </p>
+        </div>
+        <div class="col-md-3" id="pad">
+          <h2 class="category">Categories</h2>
+          <ul class="list-group list-group-flush my-custom-list-group">
+            <li class="list-group-item"><a class="list-a" href="#">Novel</a></li>
+            <li class="list-group-item"><a class="list-a"  href="#">Thriller</a></li>
+            <li class="list-group-item"><a class="list-a" href="#">Horror</a></li>
+            <li class="list-group-item"><a class="list-a"  href="#">Fantasy</a></li>
+            <li class="list-group-item"><a class="list-a" href="#">Biography</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3" id="pad">
+          <h2 class="category">Authors</h2>
+          <ul class="list-group list-group-flush my-custom-list-group">
+            <li class="list-group-item"><a class="list-a"  href="#">M. T vasudevan</a></li>
+            <li class="list-group-item"><a class="list-a"  href="#">Mark Twain</a></li>
+            <li class="list-group-item"><a class="list-a" href="#">Shakespere</a></li>
+            <li class="list-group-item"><a class="list-a" href="#">Madhavikutty</a></li>
+            <li class="list-group-item"><a class="list-a" href="#">J. K Rowling</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3" id="pad">
+          <h2 class="category">Get in touch</h2>
+          <form>
+            <label for="name" class="label-foot">Name:</label><br>
+            <input type="text" id="name" name="name" value=""><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" value=""><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="2"></textarea><br><br>
+            <button type="submit" class="form-button">Submit</button>
+          </form> 
+        </form>
+    
+        </div>
+        <h4 class="copy-right text-center">© 2024 All Rights reserved.</h4>
+      </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -47,7 +47,9 @@ Keep track of your favorite books
 <details>
 🟢<summary>📸 Screenshots</summary>
 <br>
+<img src="./Image/Nav.png" alt="Navigation">
 <img src="./Image/wishlist.png" alt="Wishlist">
+<img src="./Image/Footer.png" alt="Footer">
 </details>
 
 ### 🛒 Shopping Cart
@@ -56,7 +58,9 @@ Seamless shopping experience
 <details>
 🟢<summary>📸 Screenshots</summary>
 <br>
+<img src="./Image/Nav.png" alt="Navigation">
 <img src="./Image/cart.png" alt="Shopping Cart">
+<img src="./Image/Footer.png" alt="Footer">
 </details>
 
 ### 💳 Checkout
@@ -68,9 +72,11 @@ Streamlined checkout process with:
 <details>
 🟢<summary>📸 Screenshots</summary>
 <br>
+<img src="./Image/Nav.png" alt="Navigation">
 <img src="./Image/checkout-title.png" alt="Checkout Title">
 <img src="./Image/checkoutaddress.png" alt="Checkout Address">
 <img src="./Image/checkoutaddress2.png" alt="Checkout Address Continued">
+  <img src="./Image/Footer.png" alt="Footer">
 </details>
 
 ---

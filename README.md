@@ -23,31 +23,31 @@
   🟢 Special offers and highlights
 <br>
 
-  <img src="./Image/Nav.png" alt="Navigation" width="600"><br>
-  <img src="./Image/Card.png" alt="Book Categories" width="600"><br>
-  <img src="./Image/carousel.png" alt="Carousel" width="600"><br>
-  <img src="./Image/Footer.png" alt="Footer" width="600"><br>
+  <img src="./Image/Nav.png" alt="Navigation" width="800"><br>
+  <img src="./Image/Card.png" alt="Book Categories" width="800"><br>
+  <img src="./Image/carousel.png" alt="Carousel" width="800"><br>
+  <img src="./Image/Footer.png" alt="Footer" width="800"><br>
   ### 📸 Authentication
   -Secure and user-friendly login system
 <br>
 
-  <img src="./Image/login.png" alt="Login Page" width="600"><br>
+  <img src="./Image/login.png" alt="Login Page" width="800"><br>
   ### ❤️ Wishlist
   Keep track of your favorite books
   <br>
 
-  <img src="./Image/Nav.png" alt="Navigation" width="600"><br>
-  <img src="./Image/wishlist.png" alt="Wishlist" width="600"><br>
-  <img src="./Image/Footer.png" alt="Footer" width="600"><br>
+  <img src="./Image/Nav.png" alt="Navigation" width="800"><br>
+  <img src="./Image/wishlist.png" alt="Wishlist" width="800"><br>
+  <img src="./Image/Footer.png" alt="Footer" width="800"><br>
 <br>
 
   ### 📸 Shopping Cart 
   -Seamless shopping experience
   <br>
 
-  <img src="./Image/Nav.png" alt="Navigation" width="600"><br>
-  <img src="./Image/cart.png" alt="Shopping Cart" width="600"><br>
-  <img src="./Image/Footer.png" alt="Footer" width="600"><br>
+  <img src="./Image/Nav.png" alt="Navigation" width="800"><br>
+  <img src="./Image/cart.png" alt="Shopping Cart" width="800"><br>
+  <img src="./Image/Footer.png" alt="Footer" width="800"><br>
 
    ### 📸 Checkout 
   🟢 Multiple payment options
@@ -55,11 +55,11 @@
   🟢 Order summary
   <br>
 
-  <img src="./Image/Nav.png" alt="Navigation" width="600"><br>
-  <img src="./Image/checkout-title.png" alt="Checkout Title" width="600"><br>
-  <img src="./Image/checkoutaddress.png" alt="Checkout Address" width="600"><br>
-  <img src="./Image/checkoutaddress2.png" alt="Checkout Address Continued" width="600"><br>
-  <img src="./Image/Footer.png" alt="Footer" width="600"><br>
+  <img src="./Image/Nav.png" alt="Navigation" width="800"><br>
+  <img src="./Image/checkout-title.png" alt="Checkout Title" width="800"><br>
+  <img src="./Image/checkoutaddress.png" alt="Checkout Address" width="800"><br>
+  <img src="./Image/checkoutaddress2.png" alt="Checkout Address Continued" width="800"><br>
+  <img src="./Image/Footer.png" alt="Footer" width="800"><br>
 
 <br>
 

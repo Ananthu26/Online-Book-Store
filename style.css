@@ -1,0 +1,279 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Playfair", serif;
+    /* scroll-behavior: smooth; */
+    overflow-x: hidden;
+}
+/* GLobal colour  */
+:root{
+    --x:#94e9dd;
+}
+
+
+.custom-navbar{
+    background-color:var(--x);
+}
+#logo{
+    width:100px;
+    height:80px;
+    margin-left:50px;
+    padding:5px 0px;
+    border-radius:8px;
+}
+.nav-item a{
+    color:black;
+    font-size:18px;
+    font-weight:600;
+}
+.nav-item i{
+    font-size:16px;
+    color:black;
+    font-weight:300;
+}
+.nav-item i:hover{
+    color:#fff;
+}
+.nav-item a:hover{
+    color:#fff;
+}
+
+.search-bar{
+    margin-left:200px;
+    width:400px;
+}
+
+.search-bar .form-control:focus {
+    border-color: #5a5e61;
+    box-shadow: 0 0 5px #272d31;
+    outline: none; 
+}
+
+/* Change the button border color */
+.search-bar .btn-search {
+    border-color: #000; 
+}
+
+
+.search-bar .btn-search:hover {
+    border-color: #ffff; 
+}
+/* footer */
+#main-foot{
+    padding:50px 25px;
+}
+.list-group {
+    --bs-list-group-bg:  transparent !important; 
+  }
+  .site-name {
+    color:#fff;
+    font-weight:700;
+    font-size:24px;
+    text-transform:uppercase;
+    padding-bottom:15px;
+
+  }
+  .para{
+    color:#fff;
+    font-size:16px;
+    text-transform:capitalize;
+  }
+  .category{
+    color:#fff;
+    font-weight:500;
+    font-size:20px;
+    text-transform:capitalize;
+    padding-bottom:15px;
+    text-decoration:underline;
+    text-underline-offset: 6px;
+  }
+  .list-group-item a{
+    color:#fff !important;
+    font-size:16px;
+    text-decoration:none;
+  }
+  .list-group-item a:hover{
+    color:#7a7a7a !important;
+  }
+  #pad{
+    padding:0 30px;
+  }
+label{
+    color:#fff;
+}
+input,textarea{
+    border-radius:6px;
+}
+.form-button{
+    padding:6px 12px;
+    border-width:1px solid #fff !important;
+    background-color: #c6f3ee !important ;
+    border-radius: 8px !important;
+}
+.form-button:hover{
+    background-color: #2b2d42 !important ;
+    color:#fff;
+}
+input:focus, textarea:focus{
+    border-color:aqua !important;
+    outline:none !important;
+}
+.copy-right{
+    color:#fff !important;
+    font-size:16px;
+    margin-top:20px;
+}
+/*top banner css*/
+.category-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #054D44;
+  }
+  
+  .category-title:hover {
+    color: #054D44;
+  }
+  
+  .category-img {
+    width: 50%;
+    height: 130px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-img:hover {
+    transform: scale(1.05);
+  }
+  
+  #paragraph {
+    text-decoration: none;
+    color:#black;
+  }
+  button:hover {
+    background-color: transparent;
+  }
+  .carousal-section{
+    margin-bottom:75px !important;
+  }
+  
+  /* .carousel-control-prev-icon{
+    color:#054D44 !important;
+  } */
+  /*top banner css*/
+  /*cards css blessen*/
+  .card {
+    width: 203px;
+    text-align: center;
+    transition:transform 1s ease ;
+}
+.card:hover{
+    transform: scale(0.96);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card .btn{
+    background-color: #07f0c1;
+}
+.card .btn:hover{
+    background-color: #9CE5D6;
+    border: #9CE5D6;
+}
+.menu{
+    background-color: #9CE5D6;
+    border: 1px solid #9CE5D6;
+    border-radius: 5px;
+    width: 110px;
+    padding: 7px;
+    top: 30px;
+    left: 10px;
+    display: none;
+}
+/* .dropdown:hover .menu{
+    display: block;
+    z-index:999;
+} */
+@media (max-width:998px){
+    .search-bar{
+        margin:auto;
+        width:auto;
+    }
+    #navbarSupportedContent{
+        padding-top:50px;
+    }
+ 
+    #pad{
+        margin-top:20px;
+        padding:0px 20px;
+       
+    }
+    /* Default state: Show navbar-toggler-icon, hide close-icon */
+.navbar-toggler .navbar-toggler-icon {
+    display: inline-block;
+}
+
+.navbar-toggler .close-icon{
+    display: none;
+}
+
+/* When navbar is expanded, hide navbar-toggler-icon and show close-icon */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    display: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .close-icon{
+    display: inline-block;
+}
+
+/* Optional: Style for the close icon */
+.navbar-toggler .close-icon i {
+    font-size: 1.5rem; /* Adjust icon size */
+    color: #fff; /* Set icon color */
+}
+/* Active state: When navbar is expanded */
+.navbar-toggler[aria-expanded="true"] {
+    background-color: #054D44; /* Background color when active (blue) */
+    border: 1px solid #054D44; /* Optional border */
+    
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    color: #fff !important; /* Icon color when active (white) */
+}
+
+.navbar-toggler[aria-expanded="true"] .close-icon i {
+    color: #fff !important; /* Close icon color when active (white) */
+}
+.navbar-toggler {
+    background-color: #054D44 !important; /* Default background color */
+    border: 1px solid #054D44 !important; /* Optional border */
+    
+}
+.navbar-toggler .navbar-toggler-icon {
+    color: #fff !important; /* Default icon color */
+}
+/*changing background image of toggler icon*/
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: none; /* Remove default background */
+    display: flex; /* Ensure the icon stays visible */
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Green color */
+    font-size: 1.5rem; /* Adjust size */
+}
+
+/* Add a custom "hamburger" icon */
+.navbar-toggler .navbar-toggler-icon::before {
+    content: "\2630"; /* Unicode for hamburger menu (☰) */
+    color: #fff; /* Green color */
+}
+
+/* Expanded state styling */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    content: ""; /* Remove hamburger when expanded */
+}
+
+
+
+}

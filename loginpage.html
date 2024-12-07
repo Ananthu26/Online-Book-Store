@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoginPage</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Playfair", serif;
+      /* scroll-behavior: smooth; */
+    }
+
+    /* GLobal colour  */
+    :root {
+      --x: #18d1b8;
+    }
+
+    .custom-navbar {
+      background-color: var(--x);
+    }
+
+    #logo {
+      width: 100px;
+      height: 80px;
+      margin-left: 50px;
+      padding: 5px 0px;
+      border-radius: 8px;
+    }
+
+    #nav-itemm a {
+      color: black;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    #nav-itemm i {
+      font-size: 16px;
+      color: black;
+      font-weight: 300;
+    }
+
+    #nav-itemm i:hover {
+      color: #fff;
+    }
+
+    #nav-itemm a:hover {
+      color: #fff;
+    }
+
+    body {
+      background: linear-gradient(135deg, #74ebd5, #1bb44233);
+      min-height: 100vh;
+      width: 100%;
+
+    }
+
+    #all ,#login,#image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+      border-radius: 10px;
+    }
+
+    .form-control:focus {
+      border-color: #74ebd5;
+      box-shadow: 0 0 5px rgba(116, 235, 213, 0.5);
+    }
+
+    .btn-custom {
+      background: #74ebd5;
+      border: none;
+      color: white;
+    }
+
+    .btn-custom:hover {
+      background: #5cd3c6;
+    }
+
+    .toggle-link {
+      text-decoration: none;
+      color: #74ebd5;
+    }
+
+    .toggle-link:hover {
+      color: #5cd3c6;
+      text-decoration: none;
+    }
+
+    #image img {
+      padding: 20px;
+      object-fit: cover;  /*venagil put "contain" = image will comes to normal propositions */
+      max-height: 85vh; 
+      width: 90%; 
+      border-radius: 9px;
+    }
+    img{
+      border-radius: 8px;
+    }
+  
+  </style>
+</head>
+
+<body>
+
+
+
+
+
+  <div class="row">
+      <div class="row g-0 w-100 m-0 p-0">
+        <div class="col-12 p-0">
+  <!-- Header -->
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar m-0">
+    <div class="container-fluid p-0">
+      <a href="./index.html">
+        <img id="logo" src="https://img.freepik.com/free-vector/hand-drawn-flat-design-bookstore-logo_23-2149350212.jpg"
+          alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="close-icon"><i class="fas fa-times"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center justify-content-center text-center">
+          <li class="nav-item" id="nav-itemm">
+            <a class="nav-link me-5" href="./cart.html" aria-disabled="true"><i class="fa-brands fa-bitbucket me-1"></i>
+              Cart</a>
+          </li>
+          <li class="nav-item" id="nav-itemm">
+            <a class="nav-link me-5" href="./wishlist.html" aria-disabled="true"><i
+                class="fa-regular fa-heart me-1"></i></i>Wishlist</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+        </div>
+        </div>      
+   
+      <div class="col-lg-6 col-md-12 my-lg-2 my-md-5 my-2 " id="login">
+
+        <div class="card p-4 shadow w-100" style="max-width: 400px;">
+          <ul class="nav nav-tabs d-flex justify-content-center text-align-center align-items-center mb-4" id="tabMenu">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#signin">Login In</a>
+              <!--data-bs-toggle="tab" is imp-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#signup">Sign Up</a> <!--data-bs-toggle="tab" is imp-->
+            </li>
+          </ul>
+          <div class="tab-content">
+            <!-- sign tab .. -->
+            <div id="signin" class="tab-pane active">
+              <form>
+                <div class="mb-3">
+                  <label for="signinEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="signinEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="signinPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="signinPassword" placeholder="Enter your password"
+                    required>
+                </div>
+                <a href="./index.html"> <button type="submit" class="btn btn-custom w-100">Login In</button></a>
+              </form>
+            </div>
+            <!-- signup down.. -->
+            <div id="signup" class="tab-pane  ">
+              <form>
+                <div class="mb-3">
+                  <label for="signupName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="signupName" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="signupEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="signupPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="signupPassword" placeholder="Create a password"
+                    required>
+                </div>
+                <a href="./index.html"> <button type="submit" class="btn btn-custom w-100">Sign Up</button></a>
+              </form>
+            </div>
+
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-12 p-2 rounded-4" id="image" >
+      <img src="./Image/Green Bookshop.jpg" alt="image"  id="img">
+    </div>
+
+  </div>
+  </body>
+  
+</body>
+
+</html>
